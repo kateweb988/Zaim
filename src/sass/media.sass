@@ -1,0 +1,720 @@
+@media screen and (max-width: 1350px)
+   .container
+      max-width: 1200px !important
+   #popup-call2 .popup-call__box 
+      width: 1200px
+      margin-left: -600px
+   .header__row
+      max-width: 583px
+   .checkbox .custom-checkbox + label span
+      br 
+         display: none
+   .no__box
+      max-width: 27%
+   .no__box p
+      font-size: 20px
+   .no__item:first-child
+      width: 256px
+   .body-wrap 
+      overflow: hidden
+   .no__item img
+      left: 20px
+   .info__pic
+      margin-top: -52px
+   .num__content
+      max-width: 42%
+   h2 
+      font-size: 37px
+   .footer__text
+      max-width: 50%
+@media screen and (max-width: 1199px)
+   .body-wrap
+      overflow: hidden
+   .container
+      max-width: 960px !important
+   .menu-btn5, .menu5
+      display: block
+   .menu-btn5
+      width: 44px
+      height: 44px
+      cursor: pointer
+      position: absolute
+      right: 0px
+      top: 0px
+      z-index: 1000
+      overflow: hidden
+      background: url(../img/bur1.svg) no-repeat;
+   .menu-btn5.active 
+      overflow: visible
+      position: fixed
+      top: 12px
+      right: 12px
+      background: url(../img/bur2.svg) no-repeat
+      opacity: 0
+   body.menu-active 
+      position: relative
+      overflow: hidden
+      &:after 
+         content: ""
+         display: block
+         position: absolute
+         background: rgba(42, 52, 62, 0.9)
+         right: 0
+         top: 0
+         height: 100%
+         right: 0%
+         width: 100%
+         z-index: 20
+   .menu5
+      position: fixed
+      top: 0px
+      left: 0
+      width: 70%
+      height: 100%
+      transform: translateX(-100%)
+      transition: transform 0.5s
+      z-index: 100
+      padding: 12px
+      border-radius: 0px 20px 20px 0px
+      background: rgba(255, 255, 255, 1)
+      &__close 
+         position: fixed
+         z-index: 500
+         left: 133%
+         top: 12px
+         background: transparent
+         border: none
+         opacity: 0
+         pointer-events: none
+         transition: 0s
+      &__tel 
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 100%
+         height: 48px
+         border-radius: 20px
+         background: rgba(255, 255, 255, 1)
+         font-weight: 600
+         font-size: 16px
+         line-height: 130%
+         color: #2A343E
+         img 
+            margin-right: 12px
+      &__btn 
+         width: 100%
+         margin-top: 5px
+         &:after 
+            display: none
+      &__info 
+         margin: auto auto 0
+         width: 100%
+         max-width: 268px
+         padding: 12px
+         border-radius: 20px
+         background: rgba(246, 246, 246, 1)
+      &__wrap
+         position: relative
+         height: 100%
+         display: flex
+         width: 100%
+         flex-direction: column 
+         align-items: flex-start
+      &__list 
+         width: 100%
+      &__item 
+         margin-bottom: 16px
+         width: 100%
+         p 
+            font-weight: 700
+            font-size: 21px
+            line-height: 110%
+            color: #2A343E
+            margin-bottom: 12px
+            position: relative
+            &:after 
+               content: ""
+               display: block
+               position: absolute
+               right: 0
+               top: 50%
+               width: 6px
+               background: url(../img/aft.svg) no-repeat
+               margin-top: -6px
+               height: 12px
+               transition: 0.5s
+            &.active 
+               &:after 
+                  transform: rotate(-90deg)
+         ul 
+            display: none
+            li 
+               margin-bottom: 9px
+               &:last-child
+                  margin-bottom: 0
+               a 
+                  font-weight: 400
+                  font-size: 14px
+                  line-height: 140%
+                  color: #1A1A1A
+      &__link 
+         font-weight: 700
+         font-size: 21px
+         line-height: 110%
+         color: #2A343E
+   .menu5.active
+      transform: translateX(0)
+      .menu5__close
+         pointer-events: inherit
+         opacity: 1
+   #popup-call2 .popup-call__box 
+      width: 960px
+      margin-left: -480px
+   .nav__info p, .nav__block, .nav__btn
+      display: none
+   .nav__logo
+      margin-right: 0
+      &:after 
+         display: none
+   .nav__center
+      position: relative
+   .nav__socials
+      margin-right: 53px
+   .nav__socials a
+      width: 44px
+      height: 44px
+   .nav__wrap
+      padding: 16.5px 0
+   .nav__top
+      margin-bottom: 0
+   .header__box
+      margin-top: 84px
+      flex-direction: column
+   .header__fig
+      display: none
+   .header__content
+      max-width: 100% 
+      margin-bottom: 8px
+   .header__info
+      max-width: 100%
+   .header__row
+      max-width: 73%
+   .no
+      padding: 50px 0 30px
+      h2 
+         text-align: center
+      .no__wrap
+         padding-bottom: 400px
+   .no__wrap
+      padding: 50px 0
+   .no__row
+      margin-top: 32px
+   .no__item:first-child
+      display: none
+   .no__item
+      width: 33%
+   .no__content
+      height: auto
+   .no__box .checkbox .custom-checkbox + label span a
+      border: none !important
+      text-decoration: underline
+   .no__pic 
+      top: initial
+      right: 50%
+      margin-right: -190px
+      z-index: 0
+      height: 381px
+      bottom: 31px
+   .info
+      padding: 20px 0 50px
+   .info h2
+      margin-bottom: 32px
+   .info__box
+      flex-direction: column-reverse
+   .info__right
+      max-width: 100% 
+      margin-bottom: 8px
+   .info__left
+      max-width: 100%
+   .info__pic
+      margin-top: -7px
+   .info__form
+      flex-direction: column 
+      align-items: flex-start
+   .info__form h2
+      margin-bottom: 16px
+   .info__get
+      max-width: 100%
+   .num__box
+      flex-direction: column
+   .num h2
+      text-align: center
+      margin: 0 auto 32px
+      max-width: 533px
+   .num__row
+      max-width: 100%
+   .num__content
+      max-width: 100%
+   .num__content img 
+      position: relative
+      top: 0
+      left: 0
+      display: block
+      margin: 0 auto -132px
+   .calc
+      padding: 50px 0
+   .calc h2
+      margin-bottom: 32px
+   .calc__box
+      flex-direction: column
+   .calc__content
+      max-width: 100% 
+      margin-bottom: 8px
+      border-radius: 20px 20px 0 0
+   .calc__info
+      max-width: 100% 
+      border-radius: 0 0 20px 20px 
+   .faq__box
+      flex-direction: column
+   .faq__content
+      position: relative
+      top: 0
+      max-width: 100% 
+      h2 
+         text-align: center
+         margin: 0 auto 24px
+         max-width: 533px
+   .faq__btn
+      margin: 0 auto 32px
+   .faq .accordeon
+      max-width: 100%
+   .rev
+      padding: 50px 0 60px
+   .rev h2
+      margin-bottom: 32px
+   .order__box 
+      margin: 0 auto
+      position: relative
+      z-index: 2
+   .text
+      padding: 50px 0 0
+   .text__item
+      flex-direction: column
+      padding-bottom: 32px
+      padding-top: 12px
+   .text__title
+      margin-bottom: 12px
+   .text__txt
+      max-width: 100%
+   .footer
+      padding-top: 50px
+   .footer__box
+      margin-bottom: 24px
+      flex-direction: column
+   .footer__content
+      max-width: 100% 
+      margin-bottom: 8px
+   .footer__bg
+      display: none
+   .footer__area
+      max-width: 100%
+   .footer__logo
+      margin-bottom: 32px
+   .num__item, .num__item:nth-child(2n)
+      width: 50%
+   .num__item p
+      width: 100%
+      max-width: 300px
+   .checkbox
+      margin-top: 16px !important
+   .calc__top
+      margin-bottom: 16px
+@media ( max-width: 991px )
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .container
+      max-width: 720px !important
+   #popup-call2 .popup-call__box 
+      width: 720px
+      margin-left: -360px
+   h1 
+      font-size: 38px
+   .header__flex
+      flex-direction: column
+   .header__row
+      max-width: 100%
+   .header__area
+      max-width: 100%
+   .header__content ul
+      margin-bottom: 24px
+   .no__row
+      flex-direction: column
+   .no__content
+      max-width: 100%
+      margin-bottom: 8px
+   .no__box
+      max-width: 100%
+   h2 
+      font-size: 32px
+   .no__item
+      height: auto
+   .no__item small
+      display: block
+      margin-bottom: 20px
+   .info__left div
+      background: white
+   .num__item p
+      font-size: 28px
+      span 
+         font-size: 45px
+   .rev__row
+      flex-direction: column
+   .rev__item
+      width: 100%
+      margin-bottom: 8px
+   .order__pic
+      width: 100%
+   .order__box h2
+      font-size: 32px
+   .menu5__close
+      left: 130%
+@media screen and (max-width: 767px)
+   .container
+      max-width: 540px !important
+   .popup-call__box
+      width: 95%
+      margin-left: 0
+      left: 2.5%
+      padding: 0 0 16px 4px
+      top: 8rem
+   .arcticmodal-container_i2, .arcticmodal-container_i
+      width: 100%
+   .menu5__close
+      left: 127%
+   h1 
+      font-size: 36px
+   h2, .info__form h2
+      font-size: 28px
+   .no__content
+      flex-direction: column
+   .no__item
+      width: 100% !important
+      padding: 16px 12px 
+      border-left: none !important
+      &:nth-child(3)
+         border-bottom: 1px solid rgba(42, 52, 62, 0.12)
+         border-top: 1px solid rgba(42, 52, 62, 0.12)
+   .info__fig
+      width: 100%
+      left: 0
+      margin-left: 0
+   .info__pic
+      width: 100%
+   .info__form .order__form
+      flex-direction: column
+   .info__form input
+      width: 100%
+      margin-bottom: 8px
+   .info__form button
+      width: 100%
+   .num__item p
+      font-size: 26px
+   .num__item img 
+      position: relative
+      right: 0
+      top: 0
+      margin-top: 12px
+   .num__item small
+      font-size: 14px
+   .num__content img
+      width: 100%
+   .calc__block p
+      font-size: 14px
+      margin-bottom: 8px
+   .calc__block span
+      font-size: 32px
+   .calc__sub
+      font-size: 14px
+   .order__box
+      width: 100%
+   .order__area
+      padding-bottom: 494px
+   .text__item:last-child:after
+      bottom: 40px
+   .footer__logo
+      width: 130px
+   .footer__row
+      flex-direction: column
+   .order__per
+      margin-top: 24px
+   .footer__info
+      width: 100%
+   .footer__get
+      margin-left: 0
+      margin-top: 16px
+      width: 100%
+   .footer__btn
+      margin-left: 0
+      width: 100%
+   .footer__socials
+      flex: 1 0 auto 
+      max-width: 88px
+   .footer__area
+      flex-direction: column
+   .footer__item:first-child
+      margin-right: 0
+      margin-bottom: 24px
+   .footer__item
+      width: 100%
+   .footer__bottom
+      flex-direction: column
+   .footer__policy
+      margin-bottom: 8px
+   .footer__text
+      max-width: 100%
+@media screen and (max-width: 576px)
+   button:active, button:focus 
+      outline: none
+   button::-moz-focus-inner 
+      border: 0
+   a:active, a:focus
+      outline: none
+   input, textarea
+      outline: none
+   input:active, textarea:active
+      outline: none
+   input:focusout
+      outline: none
+   .mm 
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      li 
+         margin-bottom: 40px !important
+         width: 100% !important
+         margin-top: 0 !important
+   .mob 
+      display: flex !important
+   .nav__logo 
+      width: 109px
+   .menu5
+      width: 80%
+   .menu5__close
+      left: 106%
+
+   .nav__socials a:first-child
+      margin-right: 4px
+   .nav__socials
+      margin-right: 49px
+   h1 
+      font-size: 26px
+      span 
+         display: block
+   .header__content
+      padding: 12px 
+   .header__content h1
+      margin-bottom: 12px
+   .header__content ul li
+      margin-bottom: 13px
+      font-size: 16px
+      width: 100%
+      max-width: 312px
+   .header__row a
+      height: 124px
+      width: 48.55%
+      padding-bottom: 11px
+   .header__row a img 
+      top: 13px
+      right: inherit
+      left: 12px
+      position: absolute
+      width: 80px
+      max-height: 60px
+      object-fit: contain
+   .header__row a div
+      margin: 0
+      position: absolute
+      right: 16px
+      bottom: 16px
+   .header__row a p
+      margin-top: auto
+   .header__info
+      position: relative
+      padding: 12px
+   .header__info img 
+      margin-top: 0
+      margin-bottom: 0
+      margin-left: 0
+      width: 103px
+      position: absolute
+      right: -19px
+      top: -18px
+   .header__title
+      font-size: 21px
+   .header__text
+      font-size: 14px
+      margin-bottom: 16px
+   .order__form input
+      height: 48px
+      font-size: 14px
+   .button
+      height: 48px
+   .button:after
+      width: 40px
+      height: 40px
+      top: 0
+      border-radius: 16px
+   .checkbox .custom-checkbox + label span a
+      border-bottom: none 
+      text-decoration: underline
+   .no__item span
+      width: 48px
+      height: 48px
+      font-size: 16px
+      position: absolute
+      top: 15px
+      left: 12px
+   .no__item p
+      font-size: 18px
+   .no__item small
+      font-size: 14px
+      margin-bottom: 0
+   .no__item 
+      padding-left: 76px
+      position: relative
+   .no__box
+      background: $green
+      padding: 12px
+   .no .order__form button
+      width: 40px
+      height: 40px
+      border-radius: 16px
+   .no__box p
+      font-size: 21px
+      margin-bottom: 16px
+   .no .order__form input
+      margin-bottom: 0
+   .no__pic 
+      top: initial
+      right: 50%
+      margin-right: -201px
+      z-index: 0
+      height: 381px
+      bottom: 31px
+      width: 580px
+      height: auto
+   h2, .info__form h2
+      font-size: 26px
+   .info__block p
+      font-size: 14px
+   .info__block span
+      flex: 1 0 auto 
+      max-width: 48px 
+      font-size: 16px
+      width: 48px
+      height: 48px
+   .info__block
+      padding: 12px
+   .info__left div p
+      font-size: 18px
+   .info__left div p span
+      font-size: 14px
+      br 
+         display: none
+   .info__left div
+      padding: 12px
+   .info__form h2
+      font-size: 21px
+   .info__form
+      padding: 12px
+   .info__form .checkbox .custom-checkbox + label span a
+      border-bottom: none !important
+   .num__item p
+      font-size: 18px
+   .num__item p span
+      font-size: 39px
+   .num__item
+      padding: 15px
+      padding-left: 0
+   .num__item:nth-child(2n)
+      padding-left: 11px
+      padding-right: 0
+   .num__item small
+      display: block
+      width: 100%
+   .num__block h3
+      font-size: 21px
+   .num__block p
+      font-size: 14px
+   .num__block
+      padding: 12px
+   .calc__item small, .calc__row p, .calc .slider-value
+      font-size: 14px
+   .calc .slider-thumb
+      bottom: 21px
+   .calc__info
+      padding: 12px
+   .calc__top
+      flex-direction: column
+   .calc__block
+      width: 100%
+      margin-bottom: 8px
+      &:last-child
+         margin-bottom: 0
+   .faq .accordeon .accordeon__button
+      font-size: 16px
+      padding: 12px 88px 12px 12px
+   .faq .accordeon .accordeon__button:after, .faq .accordeon .accordeon__button2:after
+      top: 12px
+      margin-top: 0px
+   .faq .accordeon .panel__text, .faq .accordeon .panel__text2
+      padding-left: 12px
+      padding-right: 40px
+   .faq .accordeon .panel__info
+      font-size: 14px
+   .rev__item
+      padding: 12px
+   .rev__text p
+      font-size: 14px
+   .order__wrap
+      padding-top: 0
+   .order__box
+      font-size: 12px
+      padding: 12px
+   .order__box h2
+      font-size: 26px
+   .order__sub
+      font-size: 14px
+      margin-bottom: 24px
+   .order__flex a
+      padding: 4px 10px 4px 8px
+   .text__title
+      font-size: 18px
+   .text__txt p
+      margin-bottom: 25px
+   .text__wrap
+      max-height: 1100px
+   .text__item:last-child:after
+      bottom: 0px
+      height: 100px
+   .text__link
+      margin-top: 20px
+   .footer__info a:first-child
+      font-size: 21px
+   .footer__content
+      padding: 12px
+   .footer__area
+      padding: 12px
+   .order__area 
+      padding: 12px 12px 387px
+@media screen and (max-width: 375px)
+   .menu5__close
+      left: 103%
+   .order__area
+      padding: 12px 12px 335px
+
+   
+   
+  

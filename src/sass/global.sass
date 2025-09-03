@@ -1,0 +1,195 @@
+body
+   font-family: 'Inter Tight', sans-serif
+   background: #ffff
+   color: $black
+   font-size: 16px
+   font-weight: 400
+   line-height: 130%
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $black
+.black
+   color: $black
+.green 
+   color: $green
+.container
+   padding: 0 15px
+   max-width: 1346px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: visible
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-size: 48px
+   color: $black
+   font-weight: 600
+   line-height: 105%
+   margin: 0
+h2 
+   margin: 0
+   font-size: 40px
+   color: $black
+   letter-spacing: -0.019rem
+   font-weight: 600
+   line-height: 105%
+.sub 
+   display: flex
+   align-items: center
+   justify-content: center
+   width: max-content
+   height: 48px
+   padding: 0px 16px 0px 12px
+   border-radius: 12px
+   background: rgb(232, 237, 244)
+   color: rgb(11, 24, 39)
+   font-size: 14px
+   font-weight: 400
+   line-height: 130%
+   margin-bottom: 24px
+   img 
+      margin-right: 15px
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg, rect, line, circle
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $black
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $black 
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $black
+.popup__bg, .info__scroll, .calc__three, .calc__three2, .calc__three3, .calc__three4, .calc__three5, .menu5, .menu5__scroll, .arcticmodal-container
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 7px
+   width: 7px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $black
+   border-radius: 6px
+.button 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   box-sizing: border-box
+   width: max-content
+   padding: 0 15px
+   height: 52px
+   border-radius: 20px
+   background: $green
+   vertical-align: middle 
+   position: relative 
+   z-index: 1 
+   -webkit-backface-visibility: hidden 
+   -moz-osx-font-smoothing: grayscale 
+   font-weight: 600
+   font-size: 14px
+   line-height: 130%
+   color: #FFFFFF
+   &:hover 
+      color: white
+      background: rgb(29,105,64)
+      &:after 
+         -webkit-animation: toLeftFromRight 0.4s forwards
+         -moz-animation: toLeftFromRight 0.4s forwards
+         animation: toLeftFromRight 0.4s forwards
+   &.btn 
+      justify-content: space-between
+      padding: 0 4px 0 16px
+   &_2
+      background: $black
+      &:hover 
+         background: rgb(95,102,110)
+   &:after 
+      position: relative
+      margin-left: 24px
+      speak: none
+      content: ''
+      width: 44px
+      height: 44px
+      display: block
+      top: 0.5px
+      -webkit-font-smoothing: antialiased
+      background: url(../img/btn.svg) no-repeat center center
+@-webkit-keyframes toLeftFromRight  
+	49%  
+		-webkit-transform: translate(-100%) 
+	50%  
+		opacity: 0 
+		-webkit-transform: translate(100%) 
+	51%  
+		opacity: 1 
+@-moz-keyframes toLeftFromRight  
+	49%  
+		-moz-transform: translate(-100%) 
+	50%  
+		opacity: 0 
+		-moz-transform: translate(100%) 
+	51%  
+		opacity: 1 
+@keyframes toLeftFromRight  
+	49%  
+		transform: translate(-100%) 
+	50%  
+		opacity: 0 
+		transform: translate(100%) 
+	51%  
+		opacity: 1 
