@@ -33,6 +33,116 @@
 
 <body>
 	<div class="body-wrap">
+		<div class="floating-menu">
+			<button class="main-btn" id="toggleMenu"></button>
+			<div class="icons">
+				<a href="https://wa.me/123456789" target="_blank" class="icon">
+					<img src="img/ch1.svg" alt="">
+				</a>
+				<a href="https://t.me/username" target="_blank" class="icon">
+					<img src="img/ch2.svg" alt="">
+				</a>
+				<button class="icon chat" id="openChat">
+					<img src="img/ch3.svg" alt="">
+				</button>
+			</div>
+		</div>
+
+		<div class="chat-box" id="chatBox">
+			<div class="chat-header">
+				<p>
+					Напишите нам
+					<span>Мы онлайн</span>
+				</p>
+				<button class="close-chat" id="closeChat"><img src="img/chat-close.svg" alt=""></button>
+			</div>
+			<div class="chat-body">
+				<div class="chat__item">
+					<div class="chat__info">
+						<img src="img/avatar.svg" alt="">
+						<p>
+							Татьяна, ассистент поддержки
+						</p>
+					</div>
+					<div class="chat__message">
+						<p class="chat__text">
+							Добрый день! Пример типового договора приложен.
+						</p>
+						<a href="#" class="chat__document">
+							<img src="img/doc.svg" alt="">
+							<p>
+								document.pdf
+								<span>
+									518 KB
+								</span>
+							</p>
+						</a>
+						<p class="chat__time">
+							10:14
+						</p>
+					</div>
+					<div class="chat__message">
+						<p class="chat__text">
+							Что-то еще требуется?
+						</p>
+						<p class="chat__time">
+							10:18
+						</p>
+					</div>
+				</div>
+				<div class="chat__item chat__item_user">
+					<div class="chat__message">
+						<p class="chat__text">
+							Нет, спасибо!
+						</p>
+						<p class="chat__time">
+							10:20
+						</p>
+					</div>
+				</div>
+				<div class="chat__item">
+					<div class="chat__info">
+						<img src="img/avatar.svg" alt="">
+						<p>
+							Татьяна, ассистент поддержки
+						</p>
+					</div>
+					<div class="chat__message">
+						<p class="chat__text">
+							Рады вам помочь!
+						</p>
+						<p class="chat__time">
+							10:22
+						</p>
+					</div>
+					<div class="chat__message">
+						<p class="chat__text">
+							Рады вам помочь!
+						</p>
+						<p class="chat__time">
+							10:22
+						</p>
+					</div>
+					<div class="chat__message">
+						<p class="chat__text">
+							Рады вам помочь!
+						</p>
+						<p class="chat__time">
+							10:22
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="chat-footer">
+				<input type="text" placeholder="Сообщение">
+				<a href="#" class="chat__add">
+					<img src="img/add.svg" alt="" class="svg">
+				</a>
+				<button>
+					<img src="img/send.svg" alt="">
+				</button>
+			</div>
+		</div>
 		<div class="menu5">
 			<button class="menu5__close">
 				<img src="img/bur2.svg" alt="">
@@ -439,7 +549,7 @@
 							<input type="text" placeholder="Имя" class="form__field" required="" name="name">
 							<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
 							<button class="btn button order__btn">
-								Отправить
+								Отправить <div></div>
 							</button>
 						</form>
 						<div class="checkbox q">
@@ -509,7 +619,7 @@
 							</p>
 							<form action="success.php" class="order__form js-form" id="popupResult" method="post">
 								<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
-								<button class="btn button order__btn"></button>
+								<button class="btn button order__btn"> </button>
 							</form>
 							<div class="checkbox q">
 								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
@@ -762,7 +872,7 @@
 							</div>
 						</div>
 						<a href="#" class="calc__btn button btn">
-							Оформить займ
+							Оформить займ <div></div>
 						</a>
 						<p class="calc__sub">
 							Расчет является предварительным <img src="img/inf.svg" alt="">
@@ -781,7 +891,7 @@
 								задают
 							</h2>
 							<a href="#" class="faq__btn button btn">
-								Все вопросы
+								Все вопросы <div></div>
 							</a>
 						</div>
 						<div class="accordeon">
@@ -956,7 +1066,7 @@
 								<input type="text" placeholder="Имя" class="form__field" required="" name="name">
 								<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
 								<button class="btn button order__btn" data-text="Отправить">
-									Отправить
+									Отправить <div></div>
 								</button>
 							</form>
 							<div class="checkbox q">
@@ -1120,7 +1230,7 @@
 							</div>
 							<div class="footer__get">
 								<a href="#" class="button btn footer__btn">
-									Оставить заявку
+									Оставить заявку <div></div>
 								</a>
 								<div class="footer__socials q">
 									<a href="#" target="_blank">

@@ -35,6 +35,26 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 document.addEventListener("DOMContentLoaded", () => {
+  const toggleMenu = document.getElementById("toggleMenu");
+  const floatingMenu = document.querySelector(".floating-menu");
+  const chatBox = document.getElementById("chatBox");
+  const openChat = document.getElementById("openChat");
+  const closeChat = document.getElementById("closeChat");
+
+  toggleMenu.addEventListener("click", () => {
+    floatingMenu.classList.toggle("active");
+  });
+
+  openChat.addEventListener("click", () => {
+    chatBox.style.display = "flex";
+    floatingMenu.classList.remove("active");
+  });
+
+  closeChat.addEventListener("click", () => {
+    chatBox.style.display = "none";
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   (function ($) {
     var elActive = '';
     $.fn.selectCF = function (options) {
@@ -216,16 +236,6 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.a2').click(function (e) {
     e.preventDefault();
     $('#popup-call2').arcticmodal({
-    });
-  });
-  $('.a3, .nav__city').click(function (e) {
-    e.preventDefault();
-    $('#popup-call3').arcticmodal({
-    });
-  });
-  $('.calc__order').click(function (e) {
-    e.preventDefault();
-    $('#popup-call4').arcticmodal({
     });
   });
 });
@@ -611,6 +621,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
       event.preventDefault();
     })
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  // Scroll
+  $('.go_to').click(function () { // ловим клик по ссылке с классом go_to
+    var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+    if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 150 }, 800); // анимируем скроолинг к элементу scroll_el
+    }
+    return false; // выключаем стандартное действие
   });
 });
 document.addEventListener('DOMContentLoaded', function () {

@@ -109,7 +109,7 @@ div
 html * 
    scrollbar-width: thin
    scrollbar-color: blue $black
-.popup__bg, .info__scroll, .calc__three, .calc__three2, .calc__three3, .calc__three4, .calc__three5, .menu5, .menu5__scroll, .arcticmodal-container
+.popup__bg, .info__scroll, .dictionary__links, .chat-body
    scrollbar-width: thin
    scrollbar-color: transparent transparent
 *::-webkit-scrollbar,
@@ -147,10 +147,11 @@ html *::-webkit-scrollbar-thumb
    &:hover 
       color: white
       background: rgb(29,105,64)
-      &:after 
-         -webkit-animation: toLeftFromRight 0.4s forwards
-         -moz-animation: toLeftFromRight 0.4s forwards
-         animation: toLeftFromRight 0.4s forwards
+      div
+         &:after 
+            -webkit-animation: toLeftFromRight 0.4s forwards
+            -moz-animation: toLeftFromRight 0.4s forwards
+            animation: toLeftFromRight 0.4s forwards
    &.btn 
       justify-content: space-between
       padding: 0 4px 0 16px
@@ -158,17 +159,26 @@ html *::-webkit-scrollbar-thumb
       background: $black
       &:hover 
          background: rgb(95,102,110)
-   &:after 
+   div
       position: relative
-      margin-left: 24px
-      speak: none
-      content: ''
       width: 44px
       height: 44px
-      display: block
-      top: 0.5px
-      -webkit-font-smoothing: antialiased
-      background: url(../img/btn.svg) no-repeat center center
+      background: rgba(255, 255, 255, 0.25)
+      border-radius: 16px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-left: 24px
+      &:after 
+         position: relative
+         speak: none
+         content: ''
+         width: 16px
+         height: 14px
+         display: block
+         top: 0.5px
+         -webkit-font-smoothing: antialiased
+         background: url(../img/btn.svg) no-repeat center center
 @-webkit-keyframes toLeftFromRight  
 	49%  
 		-webkit-transform: translate(-100%) 

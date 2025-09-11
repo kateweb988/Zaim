@@ -32,117 +32,7 @@
 </head>
 
 <body>
-	<div class="body-wrap">
-		<div class="floating-menu">
-			<button class="main-btn" id="toggleMenu"></button>
-			<div class="icons">
-				<a href="https://wa.me/123456789" target="_blank" class="icon">
-					<img src="img/ch1.svg" alt="">
-				</a>
-				<a href="https://t.me/username" target="_blank" class="icon">
-					<img src="img/ch2.svg" alt="">
-				</a>
-				<button class="icon chat" id="openChat">
-					<img src="img/ch3.svg" alt="">
-				</button>
-			</div>
-		</div>
-
-		<div class="chat-box" id="chatBox">
-			<div class="chat-header">
-				<p>
-					Напишите нам
-					<span>Мы онлайн</span>
-				</p>
-				<button class="close-chat" id="closeChat"><img src="img/chat-close.svg" alt=""></button>
-			</div>
-			<div class="chat-body">
-				<div class="chat__item">
-					<div class="chat__info">
-						<img src="img/avatar.svg" alt="">
-						<p>
-							Татьяна, ассистент поддержки
-						</p>
-					</div>
-					<div class="chat__message">
-						<p class="chat__text">
-							Добрый день! Пример типового договора приложен.
-						</p>
-						<a href="#" class="chat__document">
-							<img src="img/doc.svg" alt="">
-							<p>
-								document.pdf
-								<span>
-									518 KB
-								</span>
-							</p>
-						</a>
-						<p class="chat__time">
-							10:14
-						</p>
-					</div>
-					<div class="chat__message">
-						<p class="chat__text">
-							Что-то еще требуется?
-						</p>
-						<p class="chat__time">
-							10:18
-						</p>
-					</div>
-				</div>
-				<div class="chat__item chat__item_user">
-					<div class="chat__message">
-						<p class="chat__text">
-							Нет, спасибо!
-						</p>
-						<p class="chat__time">
-							10:20
-						</p>
-					</div>
-				</div>
-				<div class="chat__item">
-					<div class="chat__info">
-						<img src="img/avatar.svg" alt="">
-						<p>
-							Татьяна, ассистент поддержки
-						</p>
-					</div>
-					<div class="chat__message">
-						<p class="chat__text">
-							Рады вам помочь!
-						</p>
-						<p class="chat__time">
-							10:22
-						</p>
-					</div>
-					<div class="chat__message">
-						<p class="chat__text">
-							Рады вам помочь!
-						</p>
-						<p class="chat__time">
-							10:22
-						</p>
-					</div>
-					<div class="chat__message">
-						<p class="chat__text">
-							Рады вам помочь!
-						</p>
-						<p class="chat__time">
-							10:22
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="chat-footer">
-				<input type="text" placeholder="Сообщение">
-				<a href="#" class="chat__add">
-					<img src="img/add.svg" alt="" class="svg">
-				</a>
-				<button>
-					<img src="img/send.svg" alt="">
-				</button>
-			</div>
-		</div>
+	<div class="body-wrap page">
 		<div class="menu5">
 			<button class="menu5__close">
 				<img src="img/bur2.svg" alt="">
@@ -291,7 +181,7 @@
 										Порядок работы
 									</a>
 								</li>
-								<li>
+								<li class="active">
 									<a href="#">
 										Блог
 									</a>
@@ -432,620 +322,288 @@
 					</div>
 				</div>
 			</nav>
-			<div class="container">
-				<div class="header__box">
-					<div class="header__content">
-						<img src="img/fig1.svg" alt="" class="header__fig">
-						<div class="header__sub">
-							<img src="img/check.svg" alt="">
-							Работаем без комиссии
-						</div>
-						<h1>
-							Недвижимость <span class="green"> для залога</span>
-						</h1>
-						<ul>
-							<li class="q">
-								<img src="img/check2.svg" alt="">
-								Крупные суммы за 3 часа по ставке от 5.9%
-							</li>
-							<li class="q">
-								<img src="img/check2.svg" alt="">
-								Только паспорт и право собственности
-							</li>
-						</ul>
-						<div class="header__flex q">
-							<div class="header__row q">
-								<a href="#">
-									<p>
-										Квартира, <br> апартаменты
-									</p>
-									<div></div>
-									<img src="img/header1.png" alt="">
-								</a>
-								<a href="#">
-									<p>
-										Дом, коттедж
-									</p>
-									<div></div>
-									<img src="img/header2.png" alt="">
-								</a>
-								<a href="#">
-									<p>
-										Дача
-										(с землей <br> или без)
-									</p>
-									<div></div>
-									<img src="img/header3.png" alt="">
-								</a>
-								<a href="#">
-									<p>
-										Парковочное <br> место
-									</p>
-									<div></div>
-									<img src="img/header4.png" alt="">
-								</a>
-								<a href="#">
-									<p>
-										Офисы
-									</p>
-									<div></div>
-									<img src="img/header5.png" alt="">
-								</a>
-								<a href="#">
-									<p>
-										Магазины
-									</p>
-									<div></div>
-									<img src="img/header6.png" alt="">
-								</a>
-							</div>
-							<div class="header__area">
-								<p>
-									И другие виды недвижимости:
-								</p>
-								<div>
-									<a href="#">
-										<img src="img/ic1.svg" alt="">
-										<span>
-											Склады
-										</span>
-										<small></small>
-									</a>
-									<a href="#">
-										<img src="img/ic2.svg" alt="">
-										<span>
-											Производство
-										</span>
-										<small></small>
-									</a>
-									<a href="#">
-										<img src="img/ic3.svg" alt="">
-										<span>
-											Торговые центры
-										</span>
-										<small></small>
-									</a>
-									<a href="#">
-										<img src="img/ic4.svg" alt="">
-										<span>
-											Земельный участок
-										</span>
-										<small></small>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="header__info">
-						<img src="img/time.png" alt="">
-						<p class="header__title">
-							Оставьте заявку
-						</p>
-						<p class="header__text">
-							Свяжемся с вами
-							для в течение <br> 30 минут и обсудим все вопросы.
-						</p>
-						<form action="success.php" class="order__form js-form" id="popupResult" method="post">
-							<input type="text" placeholder="Имя" class="form__field" required="" name="name">
-							<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
-							<button class="btn button order__btn">
-								Отправить <div></div>
-							</button>
-						</form>
-						<div class="checkbox q">
-							<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
-								id="form1" value="Я даю свое согласие на обработку персональных данных" checked>
-							<label class="form-check-label " for="form1">
-								<span>
-									Нажимая на кнопку, вы даёте согласие <br> <a href="#" target="_blank"> на обработку ваших
-										персональных данных</a>
-								</span>
-							</label>
-						</div>
-					</div>
-				</div>
-			</div>
 		</header>
-		<section class="no" id="no">
-			<img src="img/no.png" alt="" class="no__pic">
-			<div class="no__wrap">
-				<div class="container">
-					<h2>
-						<span class="green"> Три «НЕ»</span> в основе <br> нашей работы
-					</h2>
-					<div class="no__row q">
-						<div class="no__content q">
-							<div class="no__item">
-								<img src="img/no2.png" alt="">
-							</div>
-							<div class="no__item">
-								<p>
-									Не интересуемся
-								</p>
-								<small>
-									Зачем нужны деньги.
-								</small>
-								<span>
-									1
-								</span>
-							</div>
-							<div class="no__item">
-								<p>
-									Не учитываем
-								</p>
-								<small>
-									Кредитную историю.
-								</small>
-								<span>
-									2
-								</span>
-							</div>
-							<div class="no__item">
-								<p>
-									Не требуем
-								</p>
-								<small>
-									Смены собственника, выписки жильцов.
-								</small>
-								<span>
-									3
-								</span>
-							</div>
-						</div>
-						<div class="no__box">
-							<p>
-								Срочный выкуп недвижимости! <br>
-								80% рыночной стоимости!
-							</p>
-							<form action="success.php" class="order__form js-form" id="popupResult" method="post">
-								<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
-								<button class="btn button order__btn"> </button>
-							</form>
-							<div class="checkbox q">
-								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
-									id="form2" value="Я даю свое согласие на обработку персональных данных" checked>
-								<label class="form-check-label " for="form2">
-									<span>
-										Нажимая на кнопку, вы даёте согласие <br> <a href="#" target="_blank"> на обработку
-											ваших
-											персональных данных</a>
-									</span>
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="info" id="info">
+		<section class="news blog sec" id="blog">
 			<div class="container">
-				<h2>
-					Заемщикам предлагаем <span class="green"> простую и понятную</span> <br> схему сотрудничества
-				</h2>
-				<div class="info__box q">
-					<div class="info__left">
-						<img src="img/fig2.svg" alt="" class="info__fig">
-						<img src="img/info.png" alt="" class="info__pic">
-						<div>
-							<img src="img/check2.svg" alt="">
-							<p>
-								Все в законодательных рамках!
-								<span>
-									Сделки проводятся в соответствии с Федеральным Законом № 102.
-								</span>
-							</p>
-						</div>
-					</div>
-					<div class="info__right">
-						<div class="info__block">
-							<span>1</span>
-							<p>
-								Оформление заявки на займ на сайте или по телефону
-							</p>
-						</div>
-						<div class="info__block">
-							<span>2</span>
-							<p>
-								Обсуждение с менеджером начальных условий
-							</p>
-						</div>
-						<div class="info__block">
-							<span>3</span>
-							<p>
-								Предоставление документов на право собственности
-							</p>
-						</div>
-						<div class="info__block">
-							<span>4</span>
-							<p>
-								Согласование итоговых условий получения займа
-							</p>
-						</div>
-						<div class="info__block">
-							<span>5</span>
-							<p>
-								Подписание договора и зачисление денежны средст
-							</p>
-						</div>
-					</div>
+				<div class="bread">
+					<a href="main.html">
+						Главная
+					</a>
+					<p>
+						Блог
+					</p>
 				</div>
-				<div class="info__form">
-					<h2>
-						Оставьте контакт – отправим <br> договор для изучения!
-					</h2>
-					<div class="info__get">
-						<form action="success.php" class="order__form js-form" id="popupResult" method="post">
-							<input type="text" placeholder="Имя" class="form__field" required="" name="name">
-							<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
-							<button class="btn button button_2 order__btn">
-								Отправить заявку
-							</button>
-						</form>
-						<div class="checkbox q">
-							<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
-								id="form3" value="Я даю свое согласие на обработку персональных данных" checked>
-							<label class="form-check-label " for="form3">
-								<span>
-									Нажимая на кнопку, вы даёте согласие <a href="#" target="_blank"> на обработку ваших
-										персональных данных</a>
-								</span>
-							</label>
+				<h1>
+					Блог
+				</h1>
+				<div class="news__box q">
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								25.07.2025
+							</span>
+							<p>
+								<strong> Денежные займы под залог недвижимости на сумму до 70% рыночной стоимости</strong>
+								Наша компания «Займ/Залог» предлагает посреднические услуги по поиску инвесторов, готовых
+								предоставлять займы под залог недвижимости. Сделки возможны практически с любыми объектами,
+								вне зависимости от типа и ценового сегмента
+							</p>
+							<div>
+								<small>
+									Ипотека
+								</small>
+								<small>
+									Семья
+								</small>
+								<small>
+									Страхование
+								</small>
+								<small>
+									коммерческий
+								</small>
+								<small>
+									инвестор
+								</small>
+								<small>
+									бизнес
+								</small>
+								<small>
+									карта
+								</small>
+								<small>
+									займ
+								</small>
+								<small>
+									заем
+								</small>
+								<small>
+									залог
+								</small>
+							</div>
 						</div>
-					</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								18.07.2025
+							</span>
+							<p>
+								<strong>Почему займы выдаются под залог именно парковочных мест, а не гаражей?</strong>
+								И хотя наша компания «Займ/Залог» работает практически с любой недвижимостью, тем не менее, есть
+								объекты, вероятность получения займа под залог которых стремится к нулю.
+							</p>
+							<div>
+								<small>
+									Дети
+								</small>
+								<small>
+									Вклады
+								</small>
+							</div>
+						</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news2.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								16.07.2025
+							</span>
+							<p>
+								<strong>Недвижимость для залога в заброшенном месте? Вероятность сделки – 50 на 50</strong>
+								И хотя на главной странице нашего сайта сказано, что мы не даём отказов на заявки по займам
+								и одобряем каждую, тем не менее, из этого правила есть исключения. Да, бывает так, что, получив
+								информацию об объекте недвижимости, предлагаемом в качестве залога, наши специалисты не могут
+								найти инвестора и, соответственно, отказывают в подписании договора. Разумеется, это вызывает
+								удивление.
+							</p>
+							<div>
+								<small>
+									Купля-продажа
+								</small>
+								<small>
+									Ипотека
+								</small>
+								<small>
+									Семья
+								</small>
+							</div>
+						</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news3.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								10.07.2025
+							</span>
+							<p>
+								<strong> Денежные займы под залог недвижимости на сумму до 70% рыночной стоимости</strong>
+								Наша компания «Займ/Залог» предлагает посреднические услуги по поиску инвесторов, готовых
+								предоставлять займы под залог недвижимости. Сделки возможны практически с любыми объектами,
+								вне зависимости от типа и ценового сегмента
+							</p>
+							<div>
+								<small>
+									Купля-продажа
+								</small>
+								<small>
+									Ипотека
+								</small>
+								<small>
+									Семья
+								</small>
+							</div>
+						</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news4.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								18.07.2025
+							</span>
+							<p>
+								<strong> Денежные займы под залог недвижимости на сумму до 70% рыночной стоимости</strong>
+								Наша компания «Займ/Залог» предлагает посреднические услуги по поиску инвесторов, готовых
+								предоставлять займы под залог недвижимости. Сделки возможны практически с любыми объектами,
+								вне зависимости от типа и ценового сегмента
+							</p>
+							<div>
+								<small>
+									Дети
+								</small>
+								<small>
+									Вклады
+								</small>
+							</div>
+						</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news5.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								25.07.2025
+							</span>
+							<p>
+								<strong> Денежные займы под залог недвижимости на сумму до 70% рыночной стоимости</strong>
+								Наша компания «Займ/Залог» предлагает посреднические услуги по поиску инвесторов, готовых
+								предоставлять займы под залог недвижимости. Сделки возможны практически с любыми объектами,
+								вне зависимости от типа и ценового сегмента
+							</p>
+							<div>
+								<small>
+									Ипотека
+								</small>
+								<small>
+									Семья
+								</small>
+								<small>
+									Страхование
+								</small>
+							</div>
+						</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news6.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="news__item q">
+						<div class="news__content">
+							<span>
+								25.07.2025
+							</span>
+							<p>
+								<strong> Денежные займы под залог недвижимости на сумму до 70% рыночной стоимости</strong>
+								Наша компания «Займ/Залог» предлагает посреднические услуги по поиску инвесторов, готовых
+								предоставлять займы под залог недвижимости. Сделки возможны практически с любыми объектами,
+								вне зависимости от типа и ценового сегмента
+							</p>
+							<div>
+								<small>
+									Ипотека
+								</small>
+								<small>
+									Семья
+								</small>
+								<small>
+									Страхование
+								</small>
+								<small>
+									+4
+								</small>
+							</div>
+						</div>
+						<div class="level2__news">
+							<div>
+								<img src="img/news7.png" alt="">
+								<small></small>
+							</div>
+						</div>
+					</a>
 				</div>
-			</div>
-		</section>
-		<section class="num" id="num">
-			<div class="no__wrap">
-				<div class="container">
-					<h2>
-						<span class="green"> Цифры.</span> Они красноречиво подчеркивают выгоду сотрудничества с нашей
-						компанией
-					</h2>
-					<div class="num__box q">
-						<div class="num__row q">
-							<div class="num__item">
-								<p>
-									до <span> 80</span> % коммерческой стоимости
-								</p>
-								<small>
-									Сумма займа
-								</small>
-							</div>
-							<div class="num__item">
-								<p>
-									<span> 2</span> документа для займа
-								</p>
-								<small>
-									Паспорт и документ на право <br> собственности
-								</small>
-								<picture>
-									<source srcset="img/num11.png" media="(max-width: 768px)">
-									<img src="img/num1.png" alt="">
-								</picture>
-							</div>
-							<div class="num__item">
-								<p>
-									от <span>5,9</span> %
-								</p>
-								<small>
-									Процентная ставка
-								</small>
-							</div>
-							<div class="num__item">
-								<p>
-									до <span> 30</span> лет
-								</p>
-								<small>
-									Срок возврата
-								</small>
-							</div>
-							<div class="num__item">
-								<p>
-									<span> 0</span> руб
-								</p>
-								<small>
-									Наша комиссия
-								</small>
-							</div>
-							<div class="num__item">
-								<p>
-									до <span>3</span> часов
-								</p>
-								<small>
-									Время выдачи денег
-								</small>
-							</div>
-						</div>
-						<div class="num__content">
-							<picture>
-								<source srcset="img/num22.png" media="(max-width: 576px)">
-								<img src="img/num2.png" alt="">
-							</picture>
-							<div class="num__block">
-								<h3>
-									<span class="green"> Мы не требуем</span> от вас никаких других документов
-								</h3>
-								<p>
-									Справки о работе и доходах, долгах и кредитах, кредитной истории. Требуется только паспорт
-									и
-									документ на право собственности.
-								</p>
-								<a href="#" class="num__link">
-									Оставить заявку
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="calc" id="calc">
-			<div class="container">
-				<h2>
-					<span class="green"> Рассчитайте условия</span> <br class="mob"> получения займа
-				</h2>
-				<div class="calc__box">
-					<div class="calc__content">
-						<div class="calc__item">
-							<small>
-								Общая сумма
-							</small>
-							<div class="new__block">
-								<div class="slider-thumb"></div>
-								<div class="slider-container">
-									<div class="slider-track">
-										<div class="slider-fill"></div>
-									</div>
-									<div class="slider-value">0 <span>₽</span></div>
-								</div>
-								<div class="calc__row q">
-									<p>
-										10 000 ₽
-									</p>
-									<p>
-										5 000 000 ₽
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="calc__item">
-							<small>
-								Срок займа
-							</small>
-							<div class="new__block">
-								<div class="slider-thumb"></div>
-								<div class="slider-container">
-									<div class="slider-track">
-										<div class="slider-fill"></div>
-									</div>
-									<div class="slider-value">0 <span>мес</span></div>
-								</div>
-								<div class="calc__row q">
-									<p>
-										3 месяцев
-									</p>
-									<p>
-										60 месяцев
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="calc__info">
-						<div class="calc__top q">
-							<div class="calc__block">
-								<p>
-									Ежемесячный платеж
-								</p>
-								<span>
-									105 356 ₽
-								</span>
-							</div>
-							<div class="calc__block">
-								<p>
-									Процентная ставка
-								</p>
-								<span>
-									5.9%
-								</span>
-							</div>
-						</div>
-						<a href="#" class="calc__btn button btn">
-							Оформить займ <div></div>
-						</a>
-						<p class="calc__sub">
-							Расчет является предварительным <img src="img/inf.svg" alt="">
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="faq" id="faq">
-			<div class="no__wrap">
-				<div class="container">
-					<div class="faq__box q">
-						<div class="faq__content">
-							<h2>
-								<span class="green"> Ответы на вопросы,</span> <br> которые потенциальные заемщики нам часто
-								задают
-							</h2>
-							<a href="#" class="faq__btn button btn">
-								Все вопросы <div></div>
+				<div class="news__nav q">
+					<a href="#" class="news__arrow">
+						<img src="img/l.svg" alt="" class="svg">
+					</a>
+					<ul>
+						<li>
+							<a href="#">
+								01
 							</a>
-						</div>
-						<div class="accordeon">
-							<div class="accordeon-container">
-								<li class="accordeon__item">
-									<div class="accordeon__button closed">Мне нужен займ под залог недвижимости, но я не вижу
-										объект
-										своего типа в перечне тех, с которыми вы работаете. Возможна ли сделка?</div>
-									<ul class="accordeon__panel">
-										<li class="panel__text">
-											<p class="panel__info">
-												Да. Об этом сказано на сайте. Мы работаем строго по законодательству, а оно,
-												в данном
-												случае, позволяет собственнику использовать объект по назначению.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li class="accordeon__item">
-									<div class="accordeon__button closed">Почему кредитная история для вас не имеет значения?
-									</div>
-									<ul class="accordeon__panel">
-										<li class="panel__text">
-											<p class="panel__info">
-												Да. Об этом сказано на сайте. Мы работаем строго по законодательству, а оно,
-												в данном
-												случае, позволяет собственнику использовать объект по назначению.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li class="accordeon__item">
-									<div class="accordeon__button closed">Смогу ли я пользоваться недвижимостью, пока
-										она находится
-										в залоге?</div>
-									<ul class="accordeon__panel">
-										<li class="panel__text">
-											<p class="panel__info">
-												Да. Об этом сказано на сайте. Мы работаем строго по законодательству, а оно,
-												в данном
-												случае, позволяет собственнику использовать объект по назначению.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li class="accordeon__item">
-									<div class="accordeon__button closed">Месяц назад мой друг оформлял у вас займ. У нас
-										одинаковые
-										объекты, но ему вы предложили больше. Почему??</div>
-									<ul class="accordeon__panel">
-										<li class="panel__text">
-											<p class="panel__info">
-												Да. Об этом сказано на сайте. Мы работаем строго по законодательству, а оно,
-												в данном
-												случае, позволяет собственнику использовать объект по назначению.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li class="accordeon__item">
-									<div class="accordeon__button closed">Меня чуть-чуть не устраивают условия.
-										Можно ли их изменить?</div>
-									<ul class="accordeon__panel">
-										<li class="panel__text">
-											<p class="panel__info">
-												Да. Об этом сказано на сайте. Мы работаем строго по законодательству, а оно,
-												в данном
-												случае, позволяет собственнику использовать объект по назначению.
-											</p>
-										</li>
-									</ul>
-								</li>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="rev" id="rev">
-			<div class="container">
-				<h2>
-					Займ под залог недвижимости — быстрый <br> и надёжный способ <span class="green">получения
-						денег</span>
-				</h2>
-				<div class="rev__row q">
-					<div class="rev__item">
-						<div class="rev__top q">
-							<img src="img/ava1.png" alt="">
-							<div class="rev__video youtube-link" youtubeid="LRkDnSQSFXU">
-								<img src="img/play.svg" alt="" class="svg">
-							</div>
-							<div class="rev__content">
-								<p>
-									Евгения
-								</p>
-								<span>
-									24.06.2025
-								</span>
-							</div>
-						</div>
-						<div class="rev__text">
-							<p>
-								Обратился в ZaimZalog.ru для получения кредита в 6 миллионов рублей под залог недвижимости.
-								Сначала все выглядело очень обнадёживающе: низкая процентная ставка и минимальные требования
-								к документам. Процесс одобрения был быстрым, но мне пришлось несколько раз уточнять детали и
-								проверять документы...
-							</p>
-						</div>
-						<a href="#" class="num__link">
-							Читать полностью
-						</a>
-					</div>
-					<div class="rev__item">
-						<div class="rev__top q">
-							<img src="img/ava2.png" alt="">
-							<div class="rev__video youtube-link" youtubeid="LRkDnSQSFXU">
-								<img src="img/play.svg" alt="" class="svg">
-							</div>
-							<div class="rev__content">
-								<p>
-									Виктория
-								</p>
-								<span>
-									20.06.2025
-								</span>
-							</div>
-						</div>
-						<div class="rev__text">
-							<p>
-								В принципе здесь достаточно неплохие условия по кредитам под залог недвижимости. Плохо,
-								что берут в залог только жильё, расположенное в Москве или в небольшой удалённости от неё,
-								другие варианты им не подходят.
-							</p>
-						</div>
-					</div>
-					<div class="rev__item">
-						<div class="rev__top q">
-							<img src="img/ava3.png" alt="">
-							<div class="rev__content">
-								<p>
-									Андрей
-								</p>
-								<span>
-									16.05.2025
-								</span>
-							</div>
-						</div>
-						<div class="rev__text">
-							<p>
-								4 000 000 рублей сумма немалая, но мне помогли её оформить под залог моей однокомнатной
-								квартиры. Причём никого не пришлось оттуда выписывать, и жильё все так же остаётся за мной.
-							</p>
-						</div>
-					</div>
+						</li>
+						<li class="active">
+							<a href="#">
+								02
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								03
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								04
+							</a>
+						</li>
+						<li>
+							...
+						</li>
+						<li>
+							<a href="#">
+								12
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="news__arrow">
+						<img src="img/r.svg" alt="" class="svg">
+					</a>
 				</div>
 			</div>
 		</section>
@@ -1101,115 +659,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="text" id="text">
-			<div class="no__wrap">
-				<div class="container">
-					<div class="text__wrap" id="textWrap">
-						<div class="text__item q">
-							<p class="text__title">
-								«Займ/Залог». Оформление займов под залог недвижимости в срочном порядке
-							</p>
-							<div class="text__txt">
-								<p>
-									Необходимо в срочном порядке получить крупную сумму денежных средств без лишних условий?
-									В таком случае наша компания «Займ/Залог» поможет вам в решении этого вопроса.
-									Ведь основная
-									и единственная наша специализация — это предоставление займов на разные суммы на небольшие
-									и длительные периоды времени пол залог практически любой недвижимости.
-								</p>
-								<p>
-									Наша компания делает все от неё зависящее, чтобы для каждого из вас сотрудничество было
-									взаимовыгодным. Представляем, как вы усмехнулись на этом моменте. Ну, ещё бы.
-									Кто же скажет
-									о том, что он работает плохо или предлагает невыгодные условия, даже если это так.
-									Но вы не спешите с выводами, дочитайте до конца. И поймёте, что это утверждение имеет
-									под собой основания.
-								</p>
-							</div>
-						</div>
-						<div class="text__item q">
-							<p class="text__title">
-								Скорость — одно из ключевых преимуществ оформления займа у нас
-							</p>
-							<div class="text__txt">
-								<p>
-									В большинстве случаев, когда речь идёт об оформлении займа на крупную сумму,
-									она необходима,
-									как говорится, «ещё вчера». Купить партию товара для бизнеса по низкой цене, выкупить
-									интересующую недвижимость или транспортное средство или для иной цели. Не наше это дело.
-									Наше — это предоставить возможность заключить сделку быстро, что мы и делаем.
-								</p>
-								<p>
-									Одна из причин того, что займ под залог квартиры или иной, как жилой, так и коммерческой
-									недвижимости у нас можно получить срочно — отсутствие той бумажной волокиты, которая
-									есть в банковских организациях. Вам не потребуется никаких бумаг кроме паспорта
-									и документа,
-									подтверждающего право собственности на предоставляемый в качестве залога объект.
-								</p>
-								<p>
-									Срок выдачи займа определяется в каждом конкретном случае индивидуально, все зависит
-									от желаемой суммы, типа объекта. Но, так или иначе, долго ждать не придётся. Вы сами
-									в этом
-									убедитесь, обратившись в нашу компанию!
-								</p>
-							</div>
-						</div>
-						<div class="text__item q">
-							<p class="text__title">
-								Размер займа – еще одно наше преимущество, о котором стоит сказать
-							</p>
-							<div class="text__txt">
-								<p>
-									Мы предоставляем в качестве займа под залог недвижимости сумму, которая составляет до 90%
-									рыночной стоимости. Подчёркиваем — рыночной, а не оценочной. То есть, вы получаете до 90%
-									от той суммы, за которую, при желании, можно найти покупателя на объект на рынке
-									недвижимости.
-								</p>
-								<p>
-									И не надо думать, что «до» – это традиционная коммерческая уловка, когда реальная сумма
-									будет
-									раза в два меньше. Да, мы не указываем нижний порог, но сумма выдаваемого займа
-									если и будет
-									составлять менее 90% рыночной стоимости, то ненамного.
-								</p>
-								<p>
-									Мы работаем честно. Поскольку недвижимость ежегодно растёт в цене, а такие займы
-									оформляются,
-									как правило, с выплатами на несколько лет, наша команда не видит ни одной причины,
-									по которой
-									следовало бы существенно урезать сумму займа.
-								</p>
-							</div>
-						</div>
-						<div class="text__item q">
-							<p class="text__title">
-								«Займ/Залог». Оформление займов под залог недвижимости в срочном порядке
-							</p>
-							<div class="text__txt">
-								<p>
-									Необходимо в срочном порядке получить крупную сумму денежных средств без лишних условий?
-									В таком случае наша компания «Займ/Залог» поможет вам в решении этого вопроса.
-									Ведь основная
-									и единственная наша специализация — это предоставление займов на разные суммы на небольшие
-									и длительные периоды времени пол залог практически любой недвижимости.
-								</p>
-								<p>
-									Наша компания делает все от неё зависящее, чтобы для каждого из вас сотрудничество было
-									взаимовыгодным. Представляем, как вы усмехнулись на этом моменте. Ну, ещё бы.
-									Кто же скажет
-									о том, что он работает плохо или предлагает невыгодные условия, даже если это так.
-									Но вы не спешите с выводами, дочитайте до конца. И поймёте, что это утверждение имеет
-									под собой основания.
-								</p>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="text__link q" id="textLink">
-						Раскрыть полностью <img src="img/down-arrow.svg" alt="" class="svg">
-					</a>
 				</div>
 			</div>
 		</section>

@@ -42,7 +42,7 @@ input:-moz-placeholder
    padding: 0
 .popup-call__box 
    position: absolute
-   top: 5rem
+   top: 7rem
    left: 50%
    height: auto
    margin-left: -340px
@@ -55,6 +55,15 @@ input:-moz-placeholder
    box-sizing: border-box
    border-radius: 12px
    background: rgb(255, 255, 255)
+   h2 
+      font-size: 48px
+      margin-bottom: 32px
+   button 
+      margin-top: 25px
+      width: 179px
+      font-size: 16px
+   .checkbox
+      margin-top: 25px
 .menu-btn, .menu
    display: none
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
@@ -127,28 +136,30 @@ input:-moz-placeholder
    display: flex
    align-items: center
    justify-content: flex-start
-   margin-bottom: 24px
+   margin-bottom: 16px
    flex-wrap: wrap
-   a 
-      color: rgb(136, 144, 153)
-      font-size: 14px
+   p 
       font-weight: 400
+      font-size: 13px
       line-height: 130%
-      margin-bottom: 8px
+      color: #2A343E
+   a 
+      font-weight: 400
+      font-size: 13px
+      line-height: 130%
+      color: #6C7176
       &:after 
-         content: "—"
+         content: ""
          display: inline-block
-         color: rgb(136, 144, 153)
-         font-size: 14px
-         font-weight: 400
-         line-height: 130%
-         margin: 0 8px
-      &:last-child
-         color: rgb(11, 24, 39)
-         &:after 
-            display: none
+         width: 4px
+         height: 4px
+         border-radius: 50% 
+         background: $green
+         margin: 0 12px
+         position: relative
+         top: -2px
       &:hover 
-         color: $black
+         color: $green
 .mob, .menu-btn5, .menu5
    display: none
 /* SELECT */
@@ -456,6 +467,7 @@ ul.info li
             &.active 
                a 
                   color: $green
+                  font-weight: 600
                   .svg 
                      transform: rotate(180deg)
                      path 
@@ -1649,12 +1661,24 @@ input:checked + .slider:before
          height: 44px
          border-radius: 16px
          &:after 
+            position: relative
+            speak: none
+            content: ''
+            width: 16px
+            height: 14px
+            display: block
+            top: 0.5px
+            -webkit-font-smoothing: antialiased
             width: 19px
             height: 14px
             margin-left: 0
             background: url(../img/white-btn.svg) no-repeat center center
          &:hover 
             background: rgb(95,102,110)
+            &:after 
+               -webkit-animation: toLeftFromRight 0.4s forwards
+               -moz-animation: toLeftFromRight 0.4s forwards
+               animation: toLeftFromRight 0.4s forwards
 .info 
    padding: 40px 0 102px
    h2 
@@ -1937,6 +1961,7 @@ input:checked + .slider:before
          speak: none
          content: ''
          width: 17px
+         transition: 0.5s
          margin-left: 15px
          height: 15px
          display: block
@@ -2226,3 +2251,931 @@ input:checked + .slider:before
       display: flex
       align-items: center
       margin-left: auto
+.sec 
+   padding: 100px 0 0
+   margin-top: 60px
+   h1 
+      text-align: left
+      margin-bottom: 40px
+   .no__wrap
+      padding-top: 60px
+.contacts 
+   &__row 
+      align-items: center
+      justify-content: space-between
+      padding-bottom: 48px
+      border-bottom: 1px solid rgba(222, 232, 228, 1)
+      margin-bottom: 24px
+   &__time 
+      text-align: right
+      margin-bottom: 8px
+      font-weight: 400
+      font-size: 14px
+      line-height: 140%
+      color: #2A343E
+   &__tel 
+      font-weight: 600
+      font-size: 48px
+      line-height: 105%
+      color: $black
+      &:hover 
+         color: $green
+   &__socials 
+      align-items: center
+      a 
+         display: flex
+         align-items: center
+         justify-content: center
+         height: 52px
+         border-radius: 20px
+         width: max-content
+         background: rgba(246, 246, 246, 1)
+         padding: 0 16px 0 4px
+         &:first-child
+            margin-right: 4px
+         p 
+            transition: 0.5s 
+            font-weight: 700
+            font-size: 16px
+            line-height: 130%
+            color: #2A343E
+            margin-left: 16px
+         &:hover 
+            p 
+               color: $green
+   &__info 
+      align-items: flex-start
+   &__item 
+      span 
+         display: block
+         margin-bottom: 6px
+         font-weight: 400
+         font-size: 14px
+         line-height: 140%
+         color: #2A343E
+      p, a 
+         font-weight: 600
+         font-size: 18px
+         line-height: 140%
+         color: #1A1A1A
+      a:hover 
+         color: $green
+      &:first-child
+         margin-right: 180px
+.dictionary 
+   &__title 
+      margin-bottom: 16px
+      font-weight: 600
+      font-size: 21px
+      line-height: 110%
+      color: #2A343E
+   &__links 
+      flex-wrap: wrap 
+      a 
+         display: flex
+         align-items: center
+         justify-content: flex-start
+         height: 32px
+         padding: 0px 12px 0px 4px
+         border: 1px solid rgba(222, 232, 228, 1)
+         border-radius: 24px
+         width: max-content
+         margin-right: 8px
+         margin-bottom: 8px
+         span 
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 8px
+            width: 24px
+            height: 24px
+            border-radius: 50%
+            background: rgba(242, 243, 245, 1)
+            font-weight: 400
+            font-size: 12px
+            line-height: 130%
+            color: #102D30
+         p 
+            transition: 0.5s
+            font-weight: 400
+            font-size: 14px
+            line-height: 130%
+            color: #102D30
+         &:hover 
+            p 
+               color: $green
+   &__info 
+      width: 100%
+      max-width: 656px
+   &__item 
+      width: 100%
+      overflow: hidden
+      margin-bottom: 8px
+      padding: 16px 16px 16px 24px
+      border-radius: 20px
+      background: rgba(246, 246, 246, 1)
+      &:last-child
+         margin-bottom: 0
+      span 
+         display: flex
+         align-items: center
+         justify-content: center
+         margin-bottom: 24px
+         width: 52px
+         height: 52px
+         border-radius: 20px
+         background: rgba(255, 255, 255, 1)
+         font-weight: 700
+         font-size: 18px
+         line-height: 110%
+         color: #049C5F
+         padding-top: 1px
+      p 
+         margin-bottom: 8px
+         font-weight: 600
+         font-size: 21px
+         line-height: 110%
+         color: #2A343E
+      small 
+         font-weight: 400
+         font-size: 16px
+         line-height: 130%
+         color: #102D30
+.about 
+   &__wrap 
+      overflow: hidden
+      position: relative
+      padding: 24px
+      border-radius: 20px
+      background: rgba(246, 246, 246, 1)
+      margin-top: 24px
+      h1 
+         font-size: 40px
+         margin-bottom: 16px
+         z-index: 3
+         position: relative
+      p 
+         font-weight: 400
+         font-size: 16px
+         line-height: 140%
+         color: #1A1A1A
+         z-index: 3
+         position: relative
+   &__btn 
+      margin-top: 270px
+      width: 224px
+      z-index: 3
+   &__pic 
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      z-index: 2
+   &__fig
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      z-index: 1
+   .no__wrap
+      padding: 100px 0 
+      margin-top: 100px
+   .text__wrap
+      max-height: inherit !important
+   .text__item:last-child:after
+      display: none
+   .text__txt
+      ul 
+         margin-bottom: 24px
+         margin-top: -11px
+         li 
+            display: flex
+            align-items: center
+            font-weight: 400
+            font-size: 14px
+            line-height: 140%
+            color: #1A1A1A
+            margin-bottom: 8px
+            &:last-child
+               margin-bottom: 0
+            &:before 
+               content: ""
+               display: inline-flex
+               margin-right: 16px
+               width: 32px
+               height: 32px
+               border-radius: 20px
+               flex: 1 0 auto 
+               max-width: 32px
+               background: url(/img/bullet.svg) no-repeat center center
+.fast 
+   padding-top: 100px
+   h2 
+      text-align: center
+      margin-bottom: 48px
+   .header__row
+      max-width: 988px
+      gap: 8px
+   .header__area
+      background: rgba(246, 246, 246, 1)
+      max-width: 24.3%
+      display: flex
+      flex-direction: column 
+      align-items: flex-start
+      div 
+         width: 100%
+         margin-top: auto
+   .header__row a
+      padding: 24px
+      width: 32.7%
+      height: 140px
+      margin-bottom: 0
+      background: rgba(246, 246, 246, 1)
+   .header__flex
+      align-items: initial
+   .header__area p
+      font-size: 16px
+.news 
+   padding-bottom: 100px
+   &__box 
+      justify-content: space-between
+      flex-wrap: wrap
+   &__item 
+      height: 275px
+      width: 49.6%
+      margin-bottom: 8px
+      padding: 24px
+      border-radius: 20px
+      background: rgba(246, 246, 246, 1)
+      display: flex
+      align-items: flex-start
+      .level2__news
+         padding: 0
+         height: 100%
+         width: 250px
+         div 
+            height: 100%
+      &:hover 
+         div
+            small
+               &:after 
+                  -webkit-animation: toLeftFromRight 0.4s forwards
+                  -moz-animation: toLeftFromRight 0.4s forwards
+                  animation: toLeftFromRight 0.4s forwards
+            img 
+               transform: scale(1.1)
+   &__content 
+      width: 100%
+      max-width: 51%
+      height: 100%
+      display: flex
+      flex-direction: column
+      span 
+         font-weight: 400
+         font-size: 14px
+         line-height: 130%
+         color: #6C7176
+         display: block
+         margin-bottom: 16px
+      p 
+         font-weight: 600
+         font-size: 21px
+         line-height: 110%
+         color: #2A343E
+      div 
+         margin-top: auto
+         display: flex
+         small 
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 8px
+            height: 28px
+            border-radius: 24px
+            background: rgba(255, 255, 255, 1)
+            padding: 0 8px 
+            width: max-content
+            font-weight: 400
+            font-size: 12px
+            line-height: 130%
+            color: #102D30
+            &:last-child
+               margin-right: 0
+   &__nav 
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      margin-top: 25px
+      ul 
+         display: flex
+         li 
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 44px
+            height: 44px
+            overflow: hidden
+            margin-right: 8px
+            a 
+               display: flex
+               align-items: center
+               justify-content: center
+               width: 100%
+               height: 100%
+               font-weight: 400
+               font-size: 12px
+               line-height: 130%
+               color: #102D30
+               border: 1px solid rgba(222, 232, 228, 1)
+               border-radius: 16px
+               background: rgba(255, 255, 255, 1)
+            &.active 
+               a 
+                  background: $green
+                  border: 1px solid $green
+                  font-weight: 700
+                  font-size: 12px
+                  line-height: 130%
+                  color: #FFFFFF !important
+            &:last-child
+               margin-right: 0
+            &:hover 
+               a 
+                  border: 1px solid $green
+                  color: $green
+   &__arrow 
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 44px
+      height: 44px
+      border-radius: 16px
+      background: rgba(246, 246, 246, 1)
+      &:hover 
+         background: $green
+         .svg 
+            path 
+               stroke: white
+.txt
+   .about__wrap 
+      ul 
+         position: relative
+         z-index: 2
+         margin-bottom: 0px
+         li 
+            display: flex
+            align-items: center
+            font-weight: 400
+            font-size: 18px
+            line-height: 130%
+            color: #2A343E
+            margin-bottom: 13px
+            img 
+               margin-right: 14px
+            &:last-child
+               margin-bottom: 0
+   &__row 
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+   &__box 
+      width: 100%
+      max-width: 632px
+   .info__form
+      padding: 0 !important
+      background: transparent !important
+      margin-top: 100px
+   .info__form .checkbox .custom-checkbox + label::before
+      border: 1px solid $green
+   .info__form .checkbox .custom-checkbox + label span
+      color: $black
+   .info__form .checkbox .custom-checkbox + label span a 
+      color: $black
+      border-bottom: 1px solid rgba(42, 52, 62, 0.25)
+   .about__fig
+      right: -76px
+   .no__wrap
+      margin: 100px 0
+      overflow: visible
+      padding: 100px 0
+   &__item 
+      padding-top: 24px
+      border-top: 1px solid rgba(206, 223, 216, 1)
+      margin-bottom: 60px
+      ol 
+         margin-bottom: 24px
+         margin-top: -11px
+         list-style: none
+         padding-left: 50px
+         counter-reset: circle-counter
+         li 
+            font-weight: 400
+            font-size: 14px
+            line-height: 140%
+            position: relative
+            color: #1A1A1A
+            margin-bottom: 20px
+            counter-increment: circle-counter
+            &:last-child
+               margin-bottom: 0
+            &::before 
+               content: counter(circle-counter)
+               position: absolute
+               left: -50px
+               top: 50%
+               transform: translateY(-50%)
+               width: 32px
+               height: 32px
+               border-radius: 20px
+               background: rgba(255, 255, 255, 1)               
+               display: flex
+               align-items: center
+               justify-content: center
+               font-weight: 700
+               font-size: 14px
+               line-height: 140%
+               color: #049C5F
+      h2 
+         font-weight: 600
+         font-size: 32px
+         line-height: 105%
+         color: #2A343E
+         margin-bottom: 16px
+      .text__txt
+         max-width: 100%
+         p 
+            span 
+               background: rgba(4, 156, 95, 0.15)
+               border-radius: 4px
+               overflow: hidden
+               padding: 1px
+      ul 
+         margin-bottom: 24px
+         margin-top: -11px
+         li 
+            display: flex
+            align-items: center
+            font-weight: 400
+            font-size: 14px
+            line-height: 140%
+            color: #1A1A1A
+            margin-bottom: 8px
+            &:last-child
+               margin-bottom: 0
+            &:before 
+               content: ""
+               display: inline-flex
+               margin-right: 16px
+               width: 32px
+               height: 32px
+               border-radius: 20px
+               flex: 1 0 auto 
+               max-width: 32px
+               background: url(/img/bullet.svg) no-repeat center center
+      &:last-child
+         margin-bottom: 0
+   &__content 
+      width: 100%
+      max-width: 767px
+   &__info
+      width: 100%
+      max-width: 324px
+      position: sticky 
+      top: 160px
+      .header__info
+         max-width: 100%
+         background: white 
+         margin-bottom: 8px
+         .checkbox
+            margin-top: 24px
+      .header__text
+         font-size: 14px
+      .header__info img
+         position: absolute
+         right: -45px
+         top: 0
+      .header__title
+         font-size: 21px
+      .header__area
+         max-width: 100%
+         p 
+            font-weight: 600
+            font-size: 21px
+            line-height: 110%
+            color: #2A343E
+   &__pic 
+      margin-top: 60px
+      width: 100%
+      object-fit: cover 
+      overflow: hidden
+      height: 450px
+      border-radius: 20px
+   &__information
+      width: 100%
+      overflow: hidden
+      padding: 24px
+      border-radius: 12px
+      background: rgba(255, 255, 255, 1)
+      margin-bottom: 24px
+      p 
+         font-weight: 600
+         font-size: 21px
+         line-height: 110%
+         color: #2A343E
+         margin: 0
+      img 
+         margin-bottom: 20px
+.news-item 
+   &__top 
+      justify-content: space-between
+      margin-bottom: 40px
+      border-radius: 20px
+      background: rgba(246, 246, 246, 1)
+      align-items: flex-start
+      overflow: hidden
+   &__right 
+      display: flex
+      flex-wrap: wrap 
+      gap: 8px
+      width: 65%
+      padding: 12px 24px 
+      position: relative
+      a 
+         width: max-content
+         display: flex
+         align-items: center
+         justify-content: center
+         height: 28px
+         padding: 0px 8px 
+         border-radius: 24px
+         background: rgba(255, 255, 255, 1)
+         font-weight: 400
+         font-size: 12px
+         line-height: 130%
+         color: #102D30
+         &:hover 
+            color: $green
+      &:before 
+         height: 150%
+         content: ""
+         display: block
+         position: absolute
+         left: 0
+         top: 0
+         width: 1px
+         background: rgba(206, 223, 216, 1)
+   &__left 
+      padding: 12px
+      display: flex
+      align-items: center
+      img 
+         width: 68px
+         height: 68px
+         object-fit: cover 
+         border-radius: 50% 
+      div 
+         margin-left: 16px
+         p 
+            font-weight: 400
+            font-size: 14px
+            line-height: 130%
+            color: #6C7176
+            margin-bottom: 4px
+            span 
+               margin-left: 12px
+               font-weight: 600
+               font-size: 14px
+               line-height: 130%
+               color: #2A343E
+            &:last-child
+               margin-bottom: 0
+   &__area 
+      width: 100%
+      padding: 24px
+      border-radius: 20px
+      background: rgba(255, 255, 255, 1)
+      a 
+         display: flex
+         align-items: center
+         width: 100%
+         justify-content: space-between
+         padding: 12px 0 
+         border-top: 1px solid rgba(222, 232, 228, 1)
+         img 
+            object-fit: cover 
+            width: 85px
+            height: 78px
+            border-radius: 20px
+            overflow: hidden
+            flex: 1 0 auto 
+            max-width: 85px
+            margin-left: 16px
+         span 
+            display: block
+            margin-bottom: 8px
+            font-weight: 400
+            font-size: 12px
+            line-height: 130%
+            color: #6C7176
+         p 
+            font-weight: 400
+            font-size: 14px
+            line-height: 130%
+            color: #2A343E
+            -webkit-line-clamp: 4
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+            display: block
+            display: -webkit-box
+            transition: 0.5s
+         &:last-child
+            padding-bottom: 0
+         &:hover 
+            p 
+               color: $green
+   &__title  
+      margin-bottom: 16px
+      font-weight: 600
+      font-size: 21px
+      line-height: 110%
+      color: #2A343E
+.txt__main
+   margin-top: 0
+   margin-bottom: 60px
+.blog 
+   .news__item
+      width: 100%
+      height: 398px
+      p 
+         line-height: 110%
+         font-weight: 400
+         color: #2A343E
+         font-size: 16px
+         strong
+            display: block
+            margin-bottom: 8px
+            font-weight: 600
+            font-size: 24px
+            line-height: 110%
+   .news__item .level2__news
+      width: 435px
+   .news__content
+      max-width: 62%
+      div 
+         flex-wrap: wrap
+         gap: 8px
+         small 
+            margin: 0
+.popup__rev 
+   &_top 
+      align-items: center
+      margin-bottom: 30px
+      justify-content: space-between
+      h2 
+         margin-bottom: 0
+   &_info 
+      display: flex
+      align-items: center
+      img 
+         border-radius: 50% 
+         object-fit: cover 
+         display: block
+         margin-right: 16px
+         width: 68px
+         height: 68px
+         border: 4px solid rgba(239, 245, 243, 1)
+      p 
+         margin-bottom: 4px
+         font-weight: 600
+         font-size: 16px
+         line-height: 130%
+         color: #2A343E
+      span 
+         font-weight: 400
+         font-size: 14px
+         line-height: 130%
+         color: #2A343E
+   &_text 
+      p 
+         font-weight: 400
+         font-size: 16px
+         line-height: 130%
+         color: #2A343E
+#popup-thank 
+   h2 
+      text-align: center
+.floating-menu  
+   position: fixed 
+   bottom: 20px 
+   right: 20px 
+   z-index: 20
+   .main-btn  
+      width: 60px 
+      height: 60px 
+      background: url(/img/chat.svg) no-repeat center center
+      color: #fff 
+      border: none 
+      cursor: pointer 
+      transition: 0.3s 
+      z-index: 1001 
+      outline: none !important
+      &:hover 
+         opacity: 0.8
+   .icons  
+      position: absolute 
+      bottom: 70px 
+      right: 50% 
+      margin-right: -30px 
+      display: flex 
+      flex-direction: column 
+      opacity: 0 
+      transform: translateY(20px) 
+      transition: all 0.3s 
+      pointer-events: none 
+      width: 60px
+      height: 164px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 8px
+      box-sizing: border-box
+      border: 1px solid rgba(222, 232, 228, 1)
+      border-radius: 16px
+      background: rgba(255, 255, 255, 1)
+   .icon   
+      display: flex 
+      align-items: center 
+      justify-content: center 
+      cursor: pointer 
+      margin-bottom: 8px
+      width: 44px
+      height: 44px
+      border-radius: 16px
+      background: transparent
+      border: none
+      transition: 0.5s 
+      &:last-child
+         margin-bottom: 0
+      &:hover 
+         background: rgba(239, 245, 243, 1) 
+   &.active  
+      .icons  
+         opacity: 1 
+         transform: translateY(0) 
+         pointer-events: auto 
+      .main-btn  
+         transform: rotate(180deg) 
+         background: url(/img/chat2.svg) no-repeat center center
+.chat-box  
+   position: fixed 
+   bottom: 20px 
+   right: 20px  
+   display: none 
+   flex-direction: column 
+   overflow: hidden 
+   z-index: 1002 
+   width: 393px
+   border-radius: 16px
+   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.25)
+   .chat-header  
+      background: $green
+      padding: 12px 
+      display: flex 
+      justify-content: space-between 
+      align-items: center 
+      p 
+         font-weight: 600
+         font-size: 16px
+         line-height: 130%
+         color: #FFFFFF
+      span 
+         display: block
+         margin-top: 4px
+         font-weight: 400
+         font-size: 14px
+         line-height: 130%
+         color: #FFFFFF
+   .close-chat  
+      background: none 
+      border: none 
+      color: #fff 
+      font-size: 18px 
+      cursor: pointer 
+      transition: 0.5s 
+      &:hover 
+         transition: 0.5s
+         transform: rotate(90deg)
+   .chat-body  
+      padding: 12px 
+      max-height: 550px 
+      overflow-y: auto 
+      background: white
+   .chat-footer  
+      display: flex 
+      background: rgba(246, 246, 246, 1)
+      padding: 12px
+      position: relative
+      input  
+         flex: 1 
+         border: none 
+         outline: none 
+         width: 100%
+         height: 52px
+         padding-left: 12px
+         border-radius: 16px
+         background: rgba(255, 255, 255, 1)
+         font-size: 16px
+         color: #000
+         border: 1px solid white
+         &:focus
+            border: 1px solid $green
+      button  
+         border: none 
+         margin-left: 8px
+         flex: 1 0 auto 
+         width: 52px
+         height: 52px
+         display: flex
+         justify-content: center
+         align-items: center
+         border-radius: 16px
+         box-shadow: 0px 4px 12px 0px rgba(13, 10, 44, 0.06)
+         max-width: 52px
+         cursor: pointer 
+         background: $green
+         transition: 0.5s
+         &:hover 
+            background: $black
+.chat 
+   &__add 
+      position: absolute
+      right: 91px
+      bottom: 21px
+      &:hover 
+         .svg 
+            path 
+               stroke: $green
+   &__item 
+      margin-bottom: 16px
+      &_user 
+         .chat__message 
+            margin-left: auto
+            border: none 
+            border-radius: 16px 16px 0px 16px
+            background: rgba(211, 232, 223, 1)
+   &__info 
+      display: flex
+      align-items: center 
+      margin-bottom: 6px
+      p 
+         margin-left: 10px
+         font-weight: 600
+         font-size: 12px
+         line-height: 130%
+         color: #2A343E
+   &__message 
+      padding: 12px
+      margin-bottom: 8px
+      box-sizing: border-box;
+      border: 1px solid rgba(222, 232, 228, 1)
+      border-radius: 16px 16px 16px 0px
+      background: rgba(255, 255, 255, 1)
+      width: max-content
+      max-width: 95%
+   &__document 
+      display: flex
+      align-items: center
+      margin-bottom: 12px
+      p 
+         margin-left: 12px
+         font-weight: 600
+         font-size: 14px
+         line-height: 130%
+         font-feature-settings: 'liga' off
+         color: #2A343E
+         span 
+            display: block
+            margin-top: 4px
+            font-weight: 500
+            font-size: 12px
+            line-height: 130%
+            font-feature-settings: 'liga' off
+            color: #000000
+            opacity: 0.6
+   &__text 
+      margin-bottom: 12px
+      font-weight: 400
+      font-size: 14px
+      line-height: 130%
+      font-feature-settings: 'liga' off
+      color: #2A343E
+   &__time
+      font-weight: 500
+      font-size: 12px
+      line-height: 130%
+      font-feature-settings: 'liga' off
+      color: #000000
+      opacity: 0.6
