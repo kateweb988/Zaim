@@ -352,7 +352,7 @@ html *::-webkit-scrollbar-thumb {
       display: block;
       top: 0.5px;
       -webkit-font-smoothing: antialiased;
-      background: url(..../img/btn.svg) no-repeat center center; }
+      background: url(../img/btn.svg) no-repeat center center; }
 
 @-webkit-keyframes toLeftFromRight {
   49% {
@@ -2030,7 +2030,7 @@ input:checked + .slider:before {
           height: 15px;
           display: block;
           -webkit-font-smoothing: antialiased;
-          background: url(..../img/ar-right.svg) no-repeat center center; }
+          background: url(../img/ar-right.svg) no-repeat center center; }
     .level2__news span {
       display: block;
       margin-bottom: 8px;
@@ -2192,7 +2192,7 @@ input:checked + .slider:before {
         width: 19px;
         height: 14px;
         margin-left: 0;
-        background: url(..../img/white-btn.svg) no-repeat center center; }
+        background: url(../img/white-btn.svg) no-repeat center center; }
       .no .order__form button:hover {
         background: #5f666e; }
         .no .order__form button:hover:after {
@@ -2494,14 +2494,14 @@ input:checked + .slider:before {
     height: 15px;
     display: block;
     -webkit-font-smoothing: antialiased;
-    background: url(..../img/green-arr.svg) no-repeat center center; }
+    background: url(../img/green-arr.svg) no-repeat center center; }
   .num__link:hover {
     color: #2A343E; }
     .num__link:hover:after {
       -webkit-animation: toLeftFromRight 0.4s forwards;
       -moz-animation: toLeftFromRight 0.4s forwards;
       animation: toLeftFromRight 0.4s forwards;
-      background: url(..../img/black-arr.svg) no-repeat center center; }
+      background: url(../img/black-arr.svg) no-repeat center center; }
 
 .youtube-link .svg, .youtube-link path {
   transition: 0.5s; }
@@ -3794,13 +3794,13 @@ input:checked + .slider:before {
     top: 0px;
     z-index: 1000;
     overflow: hidden;
-    background: url(..../img/bur1.svg) no-repeat; }
+    background: url(../img/bur1.svg) no-repeat; }
   .menu-btn5.active {
     overflow: visible;
     position: fixed;
     top: 12px;
     right: 12px;
-    background: url(..../img/bur2.svg) no-repeat;
+    background: url(../img/bur2.svg) no-repeat;
     opacity: 0; }
   body.menu-active {
     position: relative;
@@ -3890,7 +3890,7 @@ input:checked + .slider:before {
           right: 0;
           top: 50%;
           width: 6px;
-          background: url(..../img/aft.svg) no-repeat;
+          background: url(../img/aft.svg) no-repeat;
           margin-top: -6px;
           height: 12px;
           transition: 0.5s; }
@@ -4705,7 +4705,10 @@ input:checked + .slider:before {
     align-items: flex-start;
     margin-bottom: 20px; }
   .chat-box {
-    width: 90.5%; } }
+    width: 90.5%; }
+  .button div {
+    width: 40px;
+    height: 40px; } }
 
 @media screen and (max-width: 375px) {
   .menu5__close {
