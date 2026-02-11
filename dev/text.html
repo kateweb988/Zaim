@@ -3,235 +3,290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chat Quiz</title>
+<title>Бриф в формате диалога</title>
 
 <style>
 body {
-    background: #0f0f0f;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    background: #0f0f0f;
     color: #fff;
+    padding: 40px;
 }
 
-.chat {
-    width: 100%;
-    max-width: 600px;
+/* === CHAT === */
+
+.chat-mini {
     background: #181818;
+    padding: 25px;
     border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
+    margin-bottom: 40px;
+    max-width: 700px;
 }
 
-.messages {
-    flex: 1;
-    overflow-y: auto;
-    margin-bottom: 20px;
-}
-
-.message {
-    margin-bottom: 15px;
-    max-width: 80%;
+.chat-bot {
+    background: #2a2a2a;
     padding: 12px 16px;
     border-radius: 16px;
-    line-height: 1.4;
+    margin-bottom: 10px;
+    max-width: 80%;
     animation: fadeIn 0.3s ease;
 }
 
-.bot {
-    background: #2a2a2a;
-    align-self: flex-start;
-}
-
-.user {
-    background: #ffd400;
-    color: #000;
-    align-self: flex-end;
-}
-
-.options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.option-btn {
-    background: #2a2a2a;
-    border: 1px solid #333;
-    padding: 10px 14px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.option-btn:hover {
-    background: #ffd400;
-    color: #000;
-}
-
 .typing {
-    font-style: italic;
     opacity: 0.6;
-}
-
-.input-area {
-    display: flex;
-    gap: 10px;
-}
-
-input {
-    flex: 1;
-    padding: 12px;
-    border-radius: 12px;
-    border: none;
-    outline: none;
-}
-
-button {
-    padding: 12px 18px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    background: #ffd400;
-    font-weight: bold;
+    font-style: italic;
 }
 
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(5px);}
     to {opacity: 1; transform: translateY(0);}
 }
+
+/* === FORM === */
+
+.brief__wrap {
+    max-width: 700px;
+}
+
+.form-block {
+    display: none;
+    margin-bottom: 40px;
+    background: #181818;
+    padding: 20px;
+    border-radius: 16px;
+    animation: fadeIn 0.4s ease;
+}
+
+.form-block.active {
+    display: block;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #ffd400;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
+button {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: #ffd400;
+    font-weight: bold;
+    cursor: pointer;
+}
 </style>
 </head>
 
 <body>
 
-<div class="chat">
-    <div class="messages" id="messages"></div>
-
-    <div class="input-area" id="inputArea" style="display:none;">
-        <input type="text" id="userInput" placeholder="Введите ответ...">
-        <button id="sendBtn">Отправить</button>
-    </div>
+<div class="chat-mini">
+    <div class="chat-messages"></div>
 </div>
 
+<div class="brief__wrap">
+<form class="brief-form">
+
+<!-- УСЛУГИ -->
+<div class="form-block">
+<h2>Услуги</h2>
+<div class="options">
+<label class="option"><input type="checkbox" name="service"><span>Аудит БП и UX-аналитика</span></label>
+<label class="option"><input type="checkbox" name="service"><span>UX-тестирование</span></label>
+<label class="option"><input type="checkbox" name="service"><span>Дизайн интерфейсов</span></label>
+<label class="option"><input type="checkbox" name="service"><span>Веб-разработка и интеграции</span></label>
+<label class="option"><input type="checkbox" name="service"><span>Разработка мобильных приложений</span></label>
+</div>
+<input type="text" placeholder="Свой вариант">
+</div>
+
+<!-- БЮДЖЕТ -->
+<div class="form-block">
+<h2>Бюджет</h2>
+<div class="options">
+<label class="option"><input type="radio" name="budget"><span>Менее 1 млн</span></label>
+<label class="option"><input type="radio" name="budget"><span>1–3 млн</span></label>
+<label class="option"><input type="radio" name="budget"><span>3–5 млн</span></label>
+<label class="option"><input type="radio" name="budget"><span>5–10 млн</span></label>
+<label class="option"><input type="radio" name="budget"><span>10–25 млн</span></label>
+<label class="option"><input type="radio" name="budget"><span>25–50 млн</span></label>
+<label class="option"><input type="radio" name="budget"><span>Более 50 млн</span></label>
+</div>
+<input type="text" placeholder="Свой вариант бюджета">
+</div>
+
+<!-- ЗАДАЧА -->
+<div class="form-block">
+<h2>Задача</h2>
+<input type="text" id="taskInput" placeholder="Описание задачи">
+</div>
+
+<!-- КОНТАКТЫ -->
+<div class="form-block">
+<h2>Контактные данные</h2>
+<input type="text" placeholder="Компания">
+<input type="text" placeholder="Имя">
+<input type="email" placeholder="E-mail">
+<input type="tel" placeholder="Телефон">
+</div>
+
+<!-- ОТКУДА УЗНАЛИ -->
+<div class="form-block">
+<h2>Откуда вы узнали о нас?</h2>
+<div class="options">
+<label class="option"><input type="radio" name="pp"><span>Рейтинги</span></label>
+<label class="option"><input type="radio" name="pp"><span>Рекомендации</span></label>
+<label class="option"><input type="radio" name="pp"><span>Работы</span></label>
+<label class="option"><input type="radio" name="pp"><span>СМИ</span></label>
+<label class="option"><input type="radio" name="pp"><span>Соцсети</span></label>
+</div>
+</div>
+
+<button type="submit">Отправить</button>
+
+</form>
+</div>
 <script>
-const messages = document.getElementById('messages');
-const inputArea = document.getElementById('inputArea');
-const input = document.getElementById('userInput');
-const button = document.getElementById('sendBtn');
+const blocks = document.querySelectorAll('.form-block');
+const chat = document.querySelector('.chat-messages');
 
-let selectedService = null;
-let step = 0;
+let currentStep = 0;
 
-function addMessage(text, type) {
+function addMessage(text) {
     const div = document.createElement('div');
-    div.classList.add('message', type);
-    div.innerHTML = text;
-    messages.appendChild(div);
-    messages.scrollTop = messages.scrollHeight;
+    div.classList.add('chat-bot');
+    div.innerText = text;
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
 }
 
 function showTyping(callback) {
     const typing = document.createElement('div');
-    typing.classList.add('message', 'bot', 'typing');
-    typing.innerHTML = "Печатает...";
-    messages.appendChild(typing);
-    messages.scrollTop = messages.scrollHeight;
+    typing.classList.add('chat-bot', 'typing');
+    typing.innerText = "Печатает...";
+    chat.appendChild(typing);
 
     setTimeout(() => {
         typing.remove();
         callback();
-    }, 1200);
+    }, 800);
 }
 
-function showFirstQuestion() {
-    addMessage("Привет 👋 Какой проект вам нужен?", "bot");
-
-    const optionsDiv = document.createElement('div');
-    optionsDiv.classList.add('options');
-
-    const services = ["Лендинг", "Интернет-магазин", "Айдентика"];
-
-    services.forEach(service => {
-        const btn = document.createElement('div');
-        btn.classList.add('option-btn');
-        btn.innerText = service;
-
-        btn.onclick = () => {
-            selectedService = service;
-            optionsDiv.remove();
-            addMessage(service, "user");
-
-            showTyping(() => {
-                askNextQuestion();
-            });
-        };
-
-        optionsDiv.appendChild(btn);
-    });
-
-    messages.appendChild(optionsDiv);
+function showBlock(index) {
+    blocks.forEach(block => block.classList.remove('active'));
+    blocks[index].classList.add('active');
 }
 
-function askNextQuestion() {
+function goToNextStep() {
 
-    if (step === 0) {
-        let questionText = "";
+    // скрываем текущий блок
+    blocks[currentStep].classList.remove('active');
 
-        if (selectedService === "Лендинг") {
-            questionText = "Отличный выбор 🔥 Это будет продающий лендинг или презентационный?";
-        } else if (selectedService === "Интернет-магазин") {
-            questionText = "Сколько примерно товаров планируется размещать?";
-        } else {
-            questionText = "Айдентика для нового бренда или ребрендинг?";
-        }
+    currentStep++;
 
-        addMessage(questionText, "bot");
-        inputArea.style.display = "flex";
-    }
+    const messages = [
+        "Отлично 👌 Теперь укажите бюджет.",
+        "Опишите задачу подробнее.",
+        "Оставьте контактные данные.",
+        "И последний вопрос — откуда вы о нас узнали?",
+        "Спасибо 🚀 Можно отправлять форму!"
+    ];
 
-    else if (step === 1) {
-        addMessage("Есть ли у вас дедлайны по запуску?", "bot");
-    }
-
-    else if (step === 2) {
-        addMessage("Как с вами удобнее связаться?", "bot");
-    }
-
-    else {
+    if (currentStep <= messages.length) {
         showTyping(() => {
-            addMessage("Спасибо 🚀 Мы свяжемся с вами в ближайшее время!", "bot");
-            input.disabled = true;
-            button.disabled = true;
+            addMessage(messages[currentStep - 1]);
+
+            if (currentStep < blocks.length) {
+                showBlock(currentStep);
+            }
         });
-        return;
     }
-
-    step++;
 }
 
-function handleSend() {
-    const text = input.value.trim();
-    if (!text) return;
+function initChat() {
+    addMessage("Привет 👋 Давайте заполним бриф в формате диалога.");
+    setTimeout(() => {
+        showTyping(() => {
+            addMessage("Выберите нужные услуги 👇");
+            showBlock(0);
+        });
+    }, 600);
+}
 
-    addMessage(text, "user");
-    input.value = "";
+initChat();
 
-    showTyping(() => {
-        askNextQuestion();
+/* ====== ТРИГГЕРЫ ====== */
+
+// 1. Услуги
+document.querySelectorAll('input[name="service"]').forEach(input => {
+    input.addEventListener('change', () => {
+        const checked = document.querySelectorAll('input[name="service"]:checked');
+        if (checked.length > 0 && currentStep === 0) {
+            goToNextStep();
+        }
     });
-}
-
-button.addEventListener("click", handleSend);
-input.addEventListener("keypress", e => {
-    if (e.key === "Enter") handleSend();
 });
 
-showFirstQuestion();
+// 2. Бюджет
+document.querySelectorAll('input[name="budget"]').forEach(input => {
+    input.addEventListener('change', () => {
+        if (currentStep === 1) {
+            goToNextStep();
+        }
+    });
+});
+
+// 3. Задача
+const taskInput = document.getElementById('taskInput');
+taskInput.addEventListener('input', () => {
+    if (taskInput.value.trim().length > 3 && currentStep === 2) {
+        goToNextStep();
+    }
+});
+
+// 4. Контакты
+const contactInputs = blocks[3].querySelectorAll('input');
+contactInputs.forEach(input => {
+    input.addEventListener('input', () => {
+        const allFilled = [...contactInputs].every(i => i.value.trim() !== "");
+        if (allFilled && currentStep === 3) {
+            goToNextStep();
+        }
+    });
+});
+
+// 5. Откуда узнали
+document.querySelectorAll('input[name="pp"]').forEach(input => {
+    input.addEventListener('change', () => {
+        if (currentStep === 4) {
+            goToNextStep();
+        }
+    });
+});
 </script>
 
 </body>
